@@ -4,10 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    height: 200px;
-}
-
 header h2 {
     background-color: #1CD1B0;
     width: 100%;
@@ -22,6 +18,7 @@ header h2 {
     width: 100%;
     font-size: 3rem;
     padding: 10px;
+    z-index: 1;
 }
 
 main {
@@ -101,4 +98,14 @@ footer {
 footer p {
     color: #fff;
     margin-left: 1rem;
+}
+
+@media (max-width: 999px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 1rem 1rem;
+    }
 }
